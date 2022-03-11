@@ -1,0 +1,25 @@
+{% extends "base.html" %} {% block title %}Asama2{% endblock %} {% block content %}
+
+
+    <form method="POST">
+      <h3 align="center">Asama2</h3>
+      <div class="form-group">
+        <label for="url">Enter Url</label>
+        <input
+          type="text"
+          class="form-control"
+          id="url"
+          name="url"
+          placeholder="Enter Url"
+        />
+      </div>
+     
+     
+      <button type="submit" class="btn btn-primary">Click it</button>
+    
+      {% for key in keyword %}
+      
+      <p>{{key}}</p>
+        {% endfor %}
+      {% endblock content %}
+  </form>
